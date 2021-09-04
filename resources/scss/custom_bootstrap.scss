@@ -1,0 +1,17 @@
+$simple-lime-green: #7dce94;
+$scuffed-dark-grey: #3d3d3f;
+$vanilla-grey: #f6f5f3;
+$white-ish: #f9f8fd;
+$custom-green: #3DE15D;
+
+$body-bg: $white-ish;
+
+$theme-colors: (
+        "primary": $simple-lime-green,
+        "secondary": $scuffed-dark-grey,
+        "danger": #ff4136,
+        "warning": #e27111,
+        "success": #1fe211,
+        "light": $vanilla-grey,
+        "dark": #121312
+)
