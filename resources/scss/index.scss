@@ -1,7 +1,10 @@
-@import "modules/header.scss";
-@import "modules/main.scss";
-@import "modules/footer.scss";
+// Bootstrap
+@import "custom_bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
-body {
-  background-color: $body-bg;
-}
+// Font Awesome
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+@import './main';

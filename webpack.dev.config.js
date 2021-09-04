@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -30,41 +31,27 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
                 test: /\.s[ac]ss$/i,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
-                test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: './fonts'
-                    }
-                }]
-            },
-            {
-                test: /\.html$/,
-                use: ['html-loader']
-            },
-            {
-                test: /\.(jpg|png)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: './img'
-                        }
-                    }
-                ]
+                test: /\.(woff2?|ttf|otf|eot|svg)$/,
+                exclude: /node_modules/,
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]'
+                }
             }
         ]
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
         new MiniCssExtractPlugin({
             filename: './css/querination.css',
         }),
