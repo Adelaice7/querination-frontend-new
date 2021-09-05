@@ -1,2 +1,2 @@
-import 'bootstrap/js/dist/dropdown';
+import { Tooltip, Toast, Popover } from 'bootstrap';
 import '../scss/index.scss';
