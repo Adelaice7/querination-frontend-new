@@ -1,6 +1,7 @@
 @import "resources/scss/modules/header";
-@import "modules/main.scss";
-@import "modules/footer.scss";
+@import "modules/main";
+@import "modules/sidebar";
+@import "modules/footer";
 
 body {
   background-color: $body-bg;

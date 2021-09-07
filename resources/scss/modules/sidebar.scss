@@ -1,0 +1,16 @@
+aside {
+  .sidebar {
+    min-width: 225px;
+    border: 1px solid $dark;
+    border-radius: 0.3em;
+
+    .user-side-menu {
+      border-bottom: 1px solid black;
+
+      a {
+        color: $dark;
+      }
+    }
+  }
+
+}

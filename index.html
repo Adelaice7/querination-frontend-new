@@ -25,14 +25,14 @@
         <div class="container-fluid">
 
             <div id="navbarMenu" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-0 me-auto">
+                <ul class="navbar-nav ms-0 me-auto order-lg-1 order-5">
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary text-light" href="#">
                             <span id="addQuestion">Add Question</span>
                         </a>
                     </li>
 
-                    <li class="nav-item dropdown ms-lg-2 me-lg-2 mt-md-1 mb-md-1">
+                    <li class="nav-item dropdown ms-lg-2 me-lg-2 ms-0 me-0 mt-1 mb-1 mt-lg-0 mb-lg-0">
                         <a class="nav-link dropdown-toggle btn btn-secondary text-light" href="#"
                            id="userDropdown"
                            role="button"
@@ -55,7 +55,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item mb-md-1">
+                    <li class="nav-item mb-1 d-none d-lg-block">
                         <a class="nav-link btn btn-secondary text-light" href="#">
                     <span id="notificationBell">
                         <i class="fas fa-bell"></i>
@@ -64,8 +64,8 @@
                     </li>
                 </ul>
 
-                <form class="d-flex navbar-form flex-shrink-0">
-                    <input class="form-control bg-light bg-gradient p-2" type="search" placeholder="Search"
+                <form class="d-flex navbar-form flex-shrink-0 order-lg-5 order-1">
+                    <input class="form-control bg-light bg-gradient p-2 w-100" type="search" placeholder="Search"
                            aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">
                             <span id="searchBtnText">
@@ -78,6 +78,335 @@
     </nav>
 </header>
 
+<div id="main-wrapper" class="main-content d-flex flex-row justify-content-start justify-content-lg-center mt-4">
+
+    <aside class="col-2 me-lg-2 ms-lg-0 d-none d-lg-block bg-white h-100">
+        <div class="d-flex flex-column flex-shrink-0 p-3 h-100 w-100 sidebar">
+            <div class="dropdown user-side-menu">
+                <a href="#" class="d-flex align-items-center text-decoration-none pt-1 pb-2 dropdown-toggle"
+                   id="dropdownUserSb" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="resources/img/querination_logo.png" alt="Username" width="32" height="32"
+                         class="rounded-circle me-2"/>
+                    <strong>Username</strong>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownUserSb">
+                    <li><a href="#" class="dropdown-item">Messages</a></li>
+                    <li><a href="#" class="dropdown-item">My Questions</a></li>
+                    <li><a href="#" class="dropdown-item">Answered questions</a></li>
+                    <li><a href="#" class="dropdown-item">Watched questions</a></li>
+                    <li><a href="#" class="dropdown-item">Favorite categories</a></li>
+                    <li><a href="#" class="dropdown-item">Settings</a></li>
+                    <li><a href="#" class="dropdown-item">Quit</a></li>
+                </ul>
+            </div>
+
+            <span class="d-flex align-items-center mt-2 mb-2 mb-0 me-auto w-100 nav-header">
+            <span class="fs-4 mb-2">Categories</span>
+        </span>
+
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active mb-1" aria-current="page">
+                        Animal
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        Food
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        Computers
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="col-lg-8 col-12 ms-lg-2 me-lg-0">
+        <div class="container-fluid bg-white p-3 pt-4 q-main-area">
+            <div class="row q-head-section">
+                <div class="col-12 d-flex flex-row align-items-center justify-content-center">
+                    <h3>Are you supposed to feed a dog every day?</h3>
+                </div>
+            </div>
+
+            <div class="row pt-3 q-desc-section">
+                <div class="col-12">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum imperdiet congue dui id
+                        maximus.
+                        Donec sed ipsum justo. Nam vel ex vel purus mattis sollicitudin. Proin commodo justo in
+                        cursus
+                        lacinia. Morbi facilisis augue ut sapien mollis iaculis. Duis id mattis orci. Vestibulum
+                        urna
+                        risus,
+                        porta vel pulvinar a, pharetra a magna. Nam commodo lectus quis sem dapibus scelerisque.
+                        Aenean
+                        nunc
+                        leo, tempus vel turpis a, faucibus ultricies urna. Nunc lacinia dictum ipsum eget blandit.
+                        Proin
+                        dapibus nisl blandit felis iaculis, id interdum orci viverra.
+                    </p>
+                    <p>
+                        Nulla suscipit id tellus ut sollicitudin. Orci varius natoque penatibus et magnis dis
+                        parturient
+                        montes, nascetur ridiculus mus. Ut quis imperdiet mauris. Duis pretium tellus in est aliquet
+                        gravida. Suspendisse porta quam sapien. In sagittis orci id nulla lacinia consectetur. Duis
+                        molestie
+                        molestie ante, sit amet tempus nulla vestibulum a. Mauris pretium commodo ligula, sed porta
+                        ipsum
+                        tincidunt et.
+                    </p>
+                    <p>
+                        Morbi laoreet sapien a lacus ornare, sit amet commodo nisi auctor. Nullam non pellentesque quam,
+                        id
+                        facilisis ante. Aliquam diam dolor, mollis ut malesuada a, aliquam vitae magna. Fusce convallis
+                        magna
+                        congue tellus ornare, et porttitor elit rhoncus. Curabitur sit amet consequat turpis. Fusce quis
+                        lacus
+                        quis mauris dignissim euismod. Duis cursus arcu vestibulum, commodo quam ac, facilisis nisi. Ut
+                        ullamcorper arcu eget rutrum congue. Ut vitae massa ut lectus congue dictum. Maecenas ac aliquet
+                        sapien.
+                        Ut eget gravida lorem. Nunc sit amet posuere massa. Proin fermentum augue ac nunc porttitor, a
+                        hendrerit
+                        lectus mattis. Duis non rutrum urna.
+                    </p>
+                    <p>
+                        Pellentesque finibus mi quis nisi ornare, quis elementum justo convallis. Nulla pulvinar leo
+                        sem,
+                        quis venenatis elit blandit nec. Suspendisse neque neque, vulputate ac molestie nec, viverra
+                        vitae
+                        tellus. Sed ut placerat justo. Nulla pretium dui sem, non vulputate felis vehicula varius.
+                        Suspendisse id gravida mauris. Cras ac mauris massa. Praesent sit amet laoreet elit, eu
+                        faucibus
+                        velit. Suspendisse elementum, purus vel aliquet luctus, sapien libero imperdiet mi, eget
+                        dictum
+                        ante
+                        lacus eu justo. Nulla facilisi. Donec a tincidunt quam, eu blandit augue. Aliquam dolor
+                        velit,
+                        viverra in elit a, blandit rhoncus lacus. Etiam porta risus sem, quis pulvinar nibh accumsan
+                        ut.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="q-answer-area container-fluid mt-4">
+            <div class="row">
+                <div class="col-12 bg-white q-a-single-area mt-2 p-3">
+                    <div class="q-a-single-header-area pt-1 pb-1">
+                        <img src="resources/img/querination_logo.png" alt="Username" width="32" height="32"
+                             class="rounded-circle me-2"/>
+                        <strong>Username</strong>
+                        -
+                        <span class="q-a-timestamp">2021.05.25. 09:25</span>
+                    </div>
+                    <div class="q-a-single-answer-area">
+                        <p>
+                            Morbi laoreet sapien a lacus ornare, sit amet commodo nisi auctor. Nullam non pellentesque
+                            quam,
+                            id
+                            facilisis ante. Aliquam diam dolor, mollis ut malesuada a, aliquam vitae magna. Fusce
+                            convallis
+                            magna
+                            congue tellus ornare, et porttitor elit rhoncus. Curabitur sit amet consequat turpis. Fusce
+                            quis
+                            lacus
+                            quis mauris dignissim euismod. Duis cursus arcu vestibulum, commodo quam ac, facilisis nisi.
+                            Ut
+                            ullamcorper arcu eget rutrum congue. Ut vitae massa ut lectus congue dictum. Maecenas ac
+                            aliquet
+                            sapien.
+                            Ut eget gravida lorem. Nunc sit amet posuere massa. Proin fermentum augue ac nunc porttitor,
+                            a
+                            hendrerit
+                            lectus mattis. Duis non rutrum urna.
+                        </p>
+                    </div>
+                    <div class="q-a-single-footer-area">
+                        <div class="q-a-rate-box p-1 text-center">
+                            <div class="q-a-rate-box-left">
+                                <svg width="28px" height="28px" viewBox="0 0 32 32" id="icon"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path d="M26,12H20V6a3.0033,3.0033,0,0,0-3-3H14.8672a2.0094,2.0094,0,0,0-1.98,1.7173l-.8453,5.9165L8.4648,16H2V30H23a7.0078,7.0078,0,0,0,7-7V16A4.0045,4.0045,0,0,0,26,12ZM8,28H4V18H8Zm20-5a5.0057,5.0057,0,0,1-5,5H10V17.3027l3.9578-5.9365L14.8672,5H17a1.0008,1.0008,0,0,1,1,1v8h8a2.0025,2.0025,0,0,1,2,2Z"
+                                          transform="translate(0 0)"/>
+                                    <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;"
+                                          class="cls-1" width="32" height="32"/>
+                                </svg>
+                            </div>
+                            <div class="q-a-rate-box-right">
+
+                                <svg width="28px" height="28px" viewBox="0 0 32 32" id="icon"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path d="M 26 21 L 20 21 L 20 27 C 19.998 28.656 18.656 29.998 17 30 L 14.867 30 C 13.873 29.996 13.032 29.266 12.887 28.283 L 12.042 22.366 L 8.465 17 L 2 17 L 2 3 L 23 3 C 26.864 3.004 29.996 6.136 30 10 L 30 17 C 29.998 19.208 28.208 20.998 26 21 Z M 8 5 L 4 5 L 4 15 L 8 15 Z M 28 10 C 27.997 7.24 25.76 5.003 23 5 L 10 5 L 10 15.697 L 13.958 21.634 L 14.867 28 L 17 28 C 17.552 28 18 27.552 18 27 L 18 19 L 26 19 C 27.104 18.999 27.999 18.104 28 17 Z"/>
+                                    <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;"
+                                          class="cls-1" width="32" height="32"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 bg-white q-a-single-area mt-2 p-3">
+                    <div class="q-a-single-header-area pt-1 pb-1">
+                        <img src="resources/img/querination_logo.png" alt="Username" width="32" height="32"
+                             class="rounded-circle me-2"/>
+                        <strong>Username</strong>
+                        -
+                        <span class="q-a-timestamp">2021.05.25. 09:25</span>
+                    </div>
+                    <div class="q-a-single-answer-area">
+                        <p>
+                            Morbi laoreet sapien a lacus ornare, sit amet commodo nisi auctor. Nullam non pellentesque
+                            quam,
+                            id
+                            facilisis ante. Aliquam diam dolor, mollis ut malesuada a, aliquam vitae magna. Fusce
+                            convallis
+                            magna
+                            congue tellus ornare, et porttitor elit rhoncus. Curabitur sit amet consequat turpis. Fusce
+                            quis
+                            lacus
+                            quis mauris dignissim euismod. Duis cursus arcu vestibulum, commodo quam ac, facilisis nisi.
+                            Ut
+                            ullamcorper arcu eget rutrum congue. Ut vitae massa ut lectus congue dictum. Maecenas ac
+                            aliquet
+                            sapien.
+                            Ut eget gravida lorem. Nunc sit amet posuere massa. Proin fermentum augue ac nunc porttitor,
+                            a
+                            hendrerit
+                            lectus mattis. Duis non rutrum urna.
+                        </p>
+                    </div>
+                    <div class="q-a-single-footer-area">
+                        <div class="q-a-rate-box p-1 text-center">
+                            <div class="q-a-rate-box-left">
+                                <svg width="28px" height="28px" viewBox="0 0 32 32" id="icon"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path d="M26,12H20V6a3.0033,3.0033,0,0,0-3-3H14.8672a2.0094,2.0094,0,0,0-1.98,1.7173l-.8453,5.9165L8.4648,16H2V30H23a7.0078,7.0078,0,0,0,7-7V16A4.0045,4.0045,0,0,0,26,12ZM8,28H4V18H8Zm20-5a5.0057,5.0057,0,0,1-5,5H10V17.3027l3.9578-5.9365L14.8672,5H17a1.0008,1.0008,0,0,1,1,1v8h8a2.0025,2.0025,0,0,1,2,2Z"
+                                          transform="translate(0 0)"/>
+                                    <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;"
+                                          class="cls-1" width="32" height="32"/>
+                                </svg>
+                            </div>
+                            <div class="q-a-rate-box-right">
+
+                                <svg width="28px" height="28px" viewBox="0 0 32 32" id="icon"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path d="M 26 21 L 20 21 L 20 27 C 19.998 28.656 18.656 29.998 17 30 L 14.867 30 C 13.873 29.996 13.032 29.266 12.887 28.283 L 12.042 22.366 L 8.465 17 L 2 17 L 2 3 L 23 3 C 26.864 3.004 29.996 6.136 30 10 L 30 17 C 29.998 19.208 28.208 20.998 26 21 Z M 8 5 L 4 5 L 4 15 L 8 15 Z M 28 10 C 27.997 7.24 25.76 5.003 23 5 L 10 5 L 10 15.697 L 13.958 21.634 L 14.867 28 L 17 28 C 17.552 28 18 27.552 18 27 L 18 19 L 26 19 C 27.104 18.999 27.999 18.104 28 17 Z"/>
+                                    <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;"
+                                          class="cls-1" width="32" height="32"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 bg-white q-a-single-area mt-2 p-3">
+                    <div class="q-a-single-header-area pt-1 pb-1">
+                        <img src="resources/img/querination_logo.png" alt="Username" width="32" height="32"
+                             class="rounded-circle me-2"/>
+                        <strong>Username 2</strong>
+                        -
+                        <span class="q-a-timestamp">2021.05.28. 16:04</span>
+                    </div>
+                    <div class="q-a-single-answer-area">
+                        <p>
+                            Morbi laoreet sapien a lacus ornare, sit amet commodo nisi auctor. Nullam non pellentesque
+                            quam,
+                            id
+                            facilisis ante. Aliquam diam dolor, mollis ut malesuada a, aliquam vitae magna. Fusce
+                            convallis
+                            magna
+                            congue tellus ornare, et porttitor elit rhoncus. Curabitur sit amet consequat turpis. Fusce
+                            quis
+                            lacus
+                            quis mauris dignissim euismod. Duis cursus arcu vestibulum, commodo quam ac, facilisis nisi.
+                            Ut
+                            ullamcorper arcu eget rutrum congue. Ut vitae massa ut lectus congue dictum. Maecenas ac
+                            aliquet
+                            sapien.
+                            Ut eget gravida lorem. Nunc sit amet posuere massa. Proin fermentum augue ac nunc porttitor,
+                            a
+                            hendrerit
+                            lectus mattis. Duis non rutrum urna.
+                        </p>
+                    </div>
+                    <div class="q-a-single-footer-area">
+                        <div class="q-a-rate-box p-1 text-center">
+                            <div class="q-a-rate-box-left">
+                                <svg width="28px" height="28px" viewBox="0 0 32 32" id="icon"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path d="M26,12H20V6a3.0033,3.0033,0,0,0-3-3H14.8672a2.0094,2.0094,0,0,0-1.98,1.7173l-.8453,5.9165L8.4648,16H2V30H23a7.0078,7.0078,0,0,0,7-7V16A4.0045,4.0045,0,0,0,26,12ZM8,28H4V18H8Zm20-5a5.0057,5.0057,0,0,1-5,5H10V17.3027l3.9578-5.9365L14.8672,5H17a1.0008,1.0008,0,0,1,1,1v8h8a2.0025,2.0025,0,0,1,2,2Z"
+                                          transform="translate(0 0)"/>
+                                    <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;"
+                                          class="cls-1" width="32" height="32"/>
+                                </svg>
+                            </div>
+                            <div class="q-a-rate-box-right">
+
+                                <svg width="28px" height="28px" viewBox="0 0 32 32" id="icon"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path d="M 26 21 L 20 21 L 20 27 C 19.998 28.656 18.656 29.998 17 30 L 14.867 30 C 13.873 29.996 13.032 29.266 12.887 28.283 L 12.042 22.366 L 8.465 17 L 2 17 L 2 3 L 23 3 C 26.864 3.004 29.996 6.136 30 10 L 30 17 C 29.998 19.208 28.208 20.998 26 21 Z M 8 5 L 4 5 L 4 15 L 8 15 Z M 28 10 C 27.997 7.24 25.76 5.003 23 5 L 10 5 L 10 15.697 L 13.958 21.634 L 14.867 28 L 17 28 C 17.552 28 18 27.552 18 27 L 18 19 L 26 19 C 27.104 18.999 27.999 18.104 28 17 Z"/>
+                                    <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;"
+                                          class="cls-1" width="32" height="32"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
 <script src="./resources/js/dist/querination.js"><!-- empty --></script>
 </body>
 </html>
